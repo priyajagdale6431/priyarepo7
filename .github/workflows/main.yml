@@ -3,14 +3,14 @@ name: Run Python Program
 on:
    push:
        branches:
-           -main
+       -  main
 
 jobs:
-   ci-pipeline:
-       runs-on: ubuntu-latest
+    streamlit-job:
+
        steps:
        - name: checkout code
          uses: actions/checkout@v2
 
-       - name: print welcome messege
+       - name: setup python
          run: echo'welcome to github action'
